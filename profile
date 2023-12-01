@@ -1,3 +1,4 @@
+alias dj="python3 manage.py"
 alias dj_mig="python3 manage.py makemigrations"
 alias dj_mig_push="python3 manage.py migrate"
 alias dj_run="python3 manage.py runserver"
