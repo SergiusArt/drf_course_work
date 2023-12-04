@@ -37,8 +37,7 @@ class User(AbstractUser):
     # Поля, которые должны быть заполнены при создании пользователя
     REQUIRED_FIELDS = []
 
-    # Добавляем поля для работы с тлг-ботом
-    tlg_bot_token = models.CharField(max_length=100, verbose_name='Токен тлг-бота', **NULLABLE)
+    # Чат-ID для работы с тлг-ботом
     tlg_chat_id = models.CharField(max_length=100, verbose_name='Чат ID тлг-бота', **NULLABLE)
 
     # Переопределяем метод save для автоматической генерации verification_code при создании пользователя
